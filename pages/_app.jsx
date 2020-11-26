@@ -16,7 +16,10 @@ const GlobalStyle = createGlobalStyle`
 body {
     background-color:  #272838ff;
     color:  #9b6a6cff;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 `;
 

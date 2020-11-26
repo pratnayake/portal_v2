@@ -1,22 +1,42 @@
 import Head from "next/head";
+import Link from "next/link";
 import styled from "styled-components";
 
-const Body = styled.body`
+const TitleCard = styled.div`
   padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+`;
+
+const CardContainer = styled.div``;
+
+const Card = styled.div`
+  width: 100px;
+  height: 100px;
+  border: 15px black;
   justify-content: center;
   align-items: center;
 `;
 
-const Title = styled.h1`
-`;
+const LinkText = styled.a`
+  text-decoration: none;
+  color: inherit;
+`
 
 const HomePage = () => {
   return (
-    <Body>
-      <Title>Pamith Ratnayake</Title>
+    <>
+      <TitleCard>
+        <h1>Pamith Ratnayake</h1>
+      </TitleCard>
+      <CardContainer>
+        <Card>
+          <Link href="/portfolio">
+            <LinkText>
+              <h3>Portfolio</h3>
+              <p>Stuff that came out of my brain</p>
+            </LinkText>
+          </Link>
+        </Card>
+      </CardContainer>
       {/* <h1 className={styles.title}>Welcome Weary Traveler</h1>
 
         <div className={styles.grid}>
@@ -34,7 +54,7 @@ const HomePage = () => {
             </a>
           </Link>
         </div> */}
-    </Body>
+    </>
   );
 };
 
