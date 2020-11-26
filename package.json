@@ -1,0 +1,21 @@
+{
+  "name": "portal_v2",
+  "version": "1.0.0",
+  "description": "Portfolio for my projects and such",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Pamith Ratnayake",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.11.1",
+    "next": "^9.5.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.2.0"
+  }
+}
